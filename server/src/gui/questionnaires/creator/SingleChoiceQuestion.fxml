@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-1.0" maxWidth="-1.0" minHeight="-1.0" minWidth="-1.0" prefHeight="363.0"
+            prefWidth="674.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="gui.questionnaires.creator.SingleChoiceController">
+    <Button layoutX="483.0" layoutY="216.0" mnemonicParsing="false" onAction="#addNewChoice" prefHeight="26.0"
+            prefWidth="83.0" text="Add" AnchorPane.bottomAnchor="121.0" AnchorPane.rightAnchor="108.0"/>
+    <TextField fx:id="titleField" layoutX="14.0" layoutY="11.0" prefWidth="530.0" promptText="Question Title"
+               AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="11.0"/>
+    <TextField fx:id="newChoiceField" layoutX="14.0" layoutY="216.0" prefHeight="26.0" prefWidth="459.0"
+               promptText="New Choice" AnchorPane.bottomAnchor="121.0" AnchorPane.leftAnchor="14.0"
+               AnchorPane.rightAnchor="201.0"/>
+    <TextArea fx:id="descriptionField" layoutX="14.0" layoutY="253.0" prefHeight="84.0" prefWidth="646.0"
+              promptText="Description" wrapText="true" AnchorPane.bottomAnchor="26.0" AnchorPane.leftAnchor="14.0"
+              AnchorPane.rightAnchor="14.0"/>
+    <ListView fx:id="choicesListView" layoutX="14.0" layoutY="47.0" prefHeight="158.0" prefWidth="646.0"
+              AnchorPane.bottomAnchor="158.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0"
+              AnchorPane.topAnchor="47.0"/>
+    <Button layoutX="576.0" layoutY="216.0" mnemonicParsing="false" onAction="#removeSelectedChoices" prefHeight="26.0"
+            prefWidth="83.0" text="Remove" AnchorPane.bottomAnchor="121.0" AnchorPane.rightAnchor="15.0"/>
+</AnchorPane>

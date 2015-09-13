@@ -1,0 +1,1 @@
+INSERT INTO Admin VALUES ("fyp", "0327692c8c32c9761b6b6e9618a6aac2e85a949dc6d8a28127154cbff80bd6ec", null, "default", "1");

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--suppress ALL -->
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="660.0" prefWidth="1052.0" style="-fx-background-color: derive(#1d1d1d, 20%);" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.main.MainController">
+   <children>
+       <Button fx:id="home" layoutX="118.0" layoutY="45.0" mnemonicParsing="false" onAction="#goHome" prefHeight="48.0" prefWidth="128.0" stylesheets="@../css/style.css" text="Home">
+           <tooltip>
+               <Tooltip text="Home" />
+           </tooltip>
+       </Button>
+       <Button fx:id="patientsButton" layoutX="256.0" layoutY="46.0" mnemonicParsing="false" onAction="#goPatients" prefHeight="48.0" prefWidth="128.0" stylesheets="@../css/style.css" text="Patients">
+           <tooltip>
+               <Tooltip text="Manage Patients" />
+           </tooltip>
+       </Button>
+       <Button fx:id="questionnaireBuilderButton" layoutX="393.0" layoutY="46.0" mnemonicParsing="false" onAction="#goQuestionnaireBuilder" prefHeight="48.0" prefWidth="128.0" stylesheets="@../css/style.css" text="Questionnaires">
+           <tooltip>
+               <Tooltip text="Manage Questionnaire" />
+           </tooltip>
+       </Button>
+       <Button fx:id="questionnaireDeployButton" layoutX="531.0" layoutY="46.0" mnemonicParsing="false" onAction="#goQuestionnaireDeploy" prefHeight="48.0" prefWidth="128.0" stylesheets="@../css/style.css" text="Deploy">
+           <tooltip>
+               <Tooltip text="Deploy Questionnaires" />
+           </tooltip>
+       </Button>
+       <Button fx:id="questionnaireDistributeButton" layoutX="669.0" layoutY="46.0" mnemonicParsing="false" onAction="#goQuestionnaireDistribute" prefHeight="48.0" prefWidth="128.0" stylesheets="@../css/style.css" text="Distribute">
+           <tooltip>
+               <Tooltip text="Send Questionnaires to Patients" />
+           </tooltip>
+       </Button>
+       <Button fx:id="viewAnswersButton" layoutX="807.0" layoutY="46.0" mnemonicParsing="false" onAction="#viewAnswers" prefHeight="48.0" prefWidth="128.0" stylesheets="@../css/style.css" text="View Answers">
+           <tooltip>
+               <Tooltip text="View Questionnaire Results" />
+           </tooltip>
+       </Button>
+       <MenuBar prefHeight="29.0" prefWidth="1052.0" stylesheets="@../css/style.css">
+          <menus>
+              <Menu mnemonicParsing="false" text="File">
+                 <items>
+                     <MenuItem fx:id="menuItemAddUser" mnemonicParsing="false" onAction="#goAddUser" text="Manage Users" />
+                     <MenuItem mnemonicParsing="false" onAction="#goChangePassword" text="Change My Password" />
+                     <MenuItem mnemonicParsing="false" onAction="#goClose" text="Close" />
+                 </items>
+              </Menu>
+              <Menu mnemonicParsing="false" text="View">
+                 <items>
+                     <MenuItem mnemonicParsing="false" onAction="#goLogs" text="Logs" />
+                     <MenuItem fx:id="exportPatientsMenuItem" mnemonicParsing="false" onAction="#goExportQuestionnaires" text="Export Questionnaires" />
+                     <MenuItem fx:id="exportQuestionnaireMenuItem" mnemonicParsing="false" onAction="#goExportPatients" text="Export Patients" />
+                     <MenuItem fx:id="importQuestionnaireMenuItem" mnemonicParsing="false" onAction="#goImportPatients" text="Import Patients" />
+                 </items>
+              </Menu>
+              <Menu mnemonicParsing="false" text="Help">
+                 <items>
+                     <MenuItem mnemonicParsing="false" onAction="#goAbout" text="About" />
+                 </items>
+              </Menu>
+          </menus>
+       </MenuBar>
+       <StackPane fx:id="displayPane" layoutY="111.0" prefHeight="548.0" prefWidth="750.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="111.0" />
+      <Pane layoutY="111.0" prefHeight="1.0" prefWidth="1052.0" style="-fx-background-color: derive(#1d1d1d, 20%);" />
+   </children>
+</AnchorPane>

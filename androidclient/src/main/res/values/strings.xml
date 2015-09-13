@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Survey Medic</string>
+    <string name="thank_you">, you have now finished this survey! Thank you.</string>
+    <string name="answer_first">Please select your answer before continuing.</string>
+    <string name="answer_question">Please answer this question before continuing..</string>
+    <string name="auto_close_1">This questionnaire session will close automatically in</string>
+    <string name="option_dialog">Do you want to go back and answer the questions you have skipped?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="auto_close_2">seconds.</string>
+    <string name="next_question">Save and Next</string>
+    <string name="previous_question">Save and Previous</string>
+    <string name="skip_question">Skip Question</string>
+    <string name="answer_here_hint">Tap here and start typing your answer.</string>
+    <string name="one_moment_please">Loading…</string>
+    <string name="questionnaires_available">You have been assigned the following questionnaires.</string>
+    <string name="no_available_questionnaires">There are no questionnaires assigned to you.</string>
+    <string name="close">Close</string>
+    <string name="submit_answers">Finish Questionnaire</string>
+    <string name="no_disability">None</string>
+    <string name="high_contrast_mode">High contrast</string>
+    <string name="select_disability">Survey accessibility options</string>
+    <string name="no_server_connection">Please check the server is running. Connection not possible at the moment.</string>
+    <string name="ok">OK</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="skip">Skip</string>
+    <string name="speak">Speak</string>
+    <string name="loading">Loading...</string>
+    <string name="tutorial">Try Tutorial Questionnaire</string>
+    <string name="title_activity_patient_detail">PatientDetailActivity</string>
+    <string name="patient_details">Patient details</string>
+    <string name="search_for_patient">Please enter your NHS Number:</string>
+    <string name="patient_nhs">NHS number</string>
+    <string name="get_patient">Login</string>
+    <string name="confirm_patient_details">Confirm Patient Details</string>
+    <string name="incorrect_nhs_format">NHS Number doesn\'t match anything we have. Sorry.</string>
+    <string name="no_patient_found">NHS Number doesn\'t match anything we have. Sorry.</string>
+    <string name="title_activity_available_questionnaires">AvailableQuestionnairesActivity</string>
+    <string name="action_sign_in_short">Connect</string>
+    <string name="login_progress_signing_in">Loading…</string>
+    <string name="answer_not_correct">This is not a correct answer, please try again.</string>
+    <string name="ok_let_me_start">Let\'s begin!</string>
+    <string name="step_start">This is a tutorial question. You will taken through the different type of questions and how to answer them.</string>
+    <string name="step_0">This is a rank question which allows you to rank or sort answers. You just tap and hold any answer and hold it until its borders turn dark. Then you drag up or down and drop it. Click "Save and Next" to move onto next question</string>
+    <string name="step_1">This is a free text question. To type, simply tap in the box and keyboard will appear. You can also translate the questions into speech by clicking \"Speak\".</string>
+    <string name="step_2">This is a yes/no question. Simply choose yes or no by tapping the circles until they are filled in.</string>
+    <string name="step_3">This is a multiple choice question. You can select more than one option by simply tapping the boxes until a cross appears.</string>
+    <string name="step_4">This is a single choice question. You can select one choice out of the choices listed. Choose a choice by tapping the circle until it is filled in.</string>
+    <string name="step_5">his is a multiple choice question. You can select more than one option by simply tapping the boxes until a cross appears.</string>
+    <string name="step_6">This is a range question. Hold down the circle and slide it left to right to choose the correct value. Let go once you have reached the value you need.</string>
+    <string name="step_7">This is another range type question. Simply do the same thing and click \"Finish Questionnaire\" to finish this tutorial.</string>
+    <string name="step_end">You have finished this questionnaire. This a simple tutorial questionnaire and you may practice it as many times as you need!</string>
+</resources>

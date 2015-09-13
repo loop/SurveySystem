@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<AnchorPane id="AnchorPane" maxHeight="-1.0" maxWidth="-1.0" minHeight="-1.0" minWidth="-1.0" prefHeight="467.0"
+            prefWidth="737.0" style="-fx-background-color: none;" xmlns="http://javafx.com/javafx/8"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.questionnaires.deployment.DeploymentController">
+    <SplitPane dividerPositions="0.33, 0.66" focusTraversable="true" prefHeight="400.0" prefWidth="600.0"
+               stylesheets="@../../css/style.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+               AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0"
+                    style="-fx-background-color: derive(#1d1d1d, 10%);">
+            <ListView id="deployedListView" fx:id="draftListView" prefHeight="381.0" prefWidth="244.0" style=" "
+                      stylesheets="@../../css/style.css" AnchorPane.bottomAnchor="45.0"
+                      AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-1.0" AnchorPane.topAnchor="39.0"/>
+            <Button layoutX="14.0" layoutY="430.0" mnemonicParsing="false" onAction="#deployQuestionnairesAction"
+                    prefHeight="26.0" prefWidth="92.0" stylesheets="@../../css/style.css" text="Live"
+                    AnchorPane.bottomAnchor="9.0" AnchorPane.leftAnchor="14.0"/>
+            <Label alignment="CENTER" layoutX="50.0" layoutY="10.0" text="Draft Questionnaires" textFill="WHITE"
+                   AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0">
+                <font>
+                    <Font name="System Bold" size="13.0"/>
+                </font>
+            </Label>
+            <Button graphicTextGap="4.0" layoutX="133.0" layoutY="430.0" mnemonicParsing="false"
+                    onAction="#archiveStateQuestionnairesAction" prefHeight="26.0" prefWidth="92.0"
+                    stylesheets="@../../css/style.css" text="Archive" AnchorPane.bottomAnchor="9.0"
+                    AnchorPane.rightAnchor="14.0"/>
+        </AnchorPane>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0"
+                    style="-fx-background-color: derive(#1d1d1d, 10%);;">
+            <ListView fx:id="deployedListView" prefHeight="381.0" prefWidth="244.0"
+                      style="-fx-focus-color: transparent;" stylesheets="@../../css/style.css"
+                      AnchorPane.bottomAnchor="45.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-1.0"
+                      AnchorPane.topAnchor="39.0"/>
+            <Button graphicTextGap="4.0" layoutX="128.0" layoutY="430.0" mnemonicParsing="false"
+                    onAction="#archiveStateQuestionnairesAction" prefHeight="26.0" prefWidth="92.0"
+                    stylesheets="@../../css/style.css" text="Archive" AnchorPane.bottomAnchor="9.0"
+                    AnchorPane.rightAnchor="14.0"/>
+            <Button graphicTextGap="4.0" layoutX="14.0" layoutY="430.0" mnemonicParsing="false"
+                    onAction="#draftStateQuestionnairesAction" prefHeight="26.0" prefWidth="92.0"
+                    stylesheets="@../../css/style.css" text="Draft" AnchorPane.bottomAnchor="9.0"
+                    AnchorPane.leftAnchor="14.0"/>
+            <Label alignment="CENTER" layoutX="53.0" layoutY="10.0" text="Live Questionnaires" textFill="WHITE"
+                   AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0">
+                <font>
+                    <Font name="System Bold" size="13.0"/>
+                </font>
+            </Label>
+        </AnchorPane>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0"
+                    style="-fx-background-color: derive(#1d1d1d, 10%);;">
+            <ListView fx:id="archivedListView" prefHeight="381.0" prefWidth="244.0"
+                      style="-fx-focus-color: transparent;" stylesheets="@../../css/style.css"
+                      AnchorPane.bottomAnchor="45.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-1.0"
+                      AnchorPane.topAnchor="39.0"/>
+            <Button layoutX="133.0" layoutY="430.0" mnemonicParsing="false"
+                    onAction="#redeployStateQuestionnairesAction" prefHeight="26.0" prefWidth="92.0"
+                    stylesheets="@../../css/style.css" text="Live" AnchorPane.bottomAnchor="9.0"
+                    AnchorPane.rightAnchor="14.0"/>
+            <Label alignment="CENTER" layoutX="42.0" layoutY="10.0" text="Archived Questionnaires"
+                   textFill="WHITE" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0">
+                <font>
+                    <Font name="System Bold" size="13.0"/>
+                </font>
+            </Label>
+            <Button graphicTextGap="4.0" layoutX="14.0" layoutY="430.0" mnemonicParsing="false"
+                    onAction="#draftStateQuestionnairesAction" prefHeight="26.0" prefWidth="92.0"
+                    stylesheets="@../../css/style.css" text="Draft" AnchorPane.bottomAnchor="9.0"
+                    AnchorPane.leftAnchor="14.0"/>
+        </AnchorPane>
+    </SplitPane>
+    <AnchorPane prefHeight="2.0" prefWidth="737.0" style="-fx-background-color: white;" AnchorPane.leftAnchor="0.0"
+                AnchorPane.rightAnchor="0.0"/>
+</AnchorPane>

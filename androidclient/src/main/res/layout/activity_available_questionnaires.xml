@@ -1,0 +1,119 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".AvailableQuestionnairesActivity"
+    android:background="@color/background"
+    tools:ignore="Overdraw">
+
+    <LinearLayout 
+        android:id="@+id/questionnairesAvailable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+        
+	    <TextView
+		    android:id="@+id/availableQuestionnairesTV"
+	    	android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	       	android:layout_marginBottom="16dp"
+	       	android:layout_gravity="center_horizontal"
+	       	android:textColor="@color/white"
+	       	android:textStyle="bold"
+	       	android:textSize="35sp" />
+	
+	    <ListView
+	        android:id="@+id/availableQuestionnairesList"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center_horizontal"
+            android:textColor="@android:color/white"
+        />
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:background="@drawable/button"
+            android:textColor="@color/white"
+            android:text="@string/tutorial"
+            android:onClick="openTutorial"
+            android:id="@+id/tutorial"/>
+	    
+    </LinearLayout>
+    
+    <RelativeLayout
+        android:id="@+id/noQuestionnaireAvailable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:orientation="vertical" >
+    
+	    <TextView
+		    android:id="@+id/noQuestionnaires"
+	    	android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	       	android:textColor="@color/white"
+	       	android:textStyle="bold"
+	       	android:textSize="35sp" />
+	    
+	    <Button
+        	android:id="@+id/close"
+	        android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/noQuestionnaires"
+            android:layout_alignLeft="@id/noQuestionnaires"
+            android:layout_alignRight="@id/noQuestionnaires"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:background="@drawable/button"
+            android:onClick="close"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+	        style="?android:attr/textAppearanceLarge"
+            android:text="@string/close"
+            tools:ignore="RtlHardcoded" />
+	    
+    </RelativeLayout>
+    
+    <LinearLayout
+        android:id="@+id/waitAvailableQuestionnaires"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:visibility="visible"
+        tools:ignore="UseCompoundDrawables">
+
+        <ImageView
+            android:id="@+id/spinnerAvailableQuestionnaires"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="8dp" 
+            android:src="@drawable/loader"
+            android:contentDescription="@string/loading"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/normal_text_size"
+            android:text="@string/one_moment_please"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+    </LinearLayout>
+
+</RelativeLayout>

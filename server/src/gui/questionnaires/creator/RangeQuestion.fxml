@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-1.0" maxWidth="-1.0" minHeight="-1.0" minWidth="-1.0" prefHeight="363.0"
+            prefWidth="720.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="gui.questionnaires.creator.RangeController">
+    <TextField fx:id="titleField" layoutX="14.0" layoutY="10.0" prefWidth="530.0" promptText="Question Title"
+               AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="10.0"/>
+    <TextField fx:id="lowerBoundField" layoutX="14.0" layoutY="47.0" prefHeight="26.0" prefWidth="400.0"
+               AnchorPane.leftAnchor="14.0"/>
+    <TextField fx:id="upperBoundField" layoutX="346.0" layoutY="47.0" prefHeight="26.0" prefWidth="400.0"
+               AnchorPane.rightAnchor="14.0"/>
+    <TextArea fx:id="descriptionField" layoutX="14.0" layoutY="85.0" prefHeight="112.0" prefWidth="530.0"
+              promptText="Description" wrapText="true" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="14.0"
+              AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="85.0"/>
+</AnchorPane>
